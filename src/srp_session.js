@@ -28,7 +28,8 @@ srp.Session = function(account, calculate) {
     return {
       login: account.login(),
       password_salt: salt,
-      password_verifier: calculate.V(x)
+      password_verifier: calculate.V(x),
+      invite_code: account.inviteCode()
     };
   };
 

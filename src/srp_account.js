@@ -14,4 +14,9 @@ srp.Account = function(login, password, id) {
   this.id = function() {
     return id || document.getElementById("user_param").value;
   };
+
+  // Returns the invite code currently typed in
+  this.inviteCode = function() {
+    return document.getElementById("srp_invite_code").value;
+  };
 }
